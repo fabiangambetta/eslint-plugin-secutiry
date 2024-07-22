@@ -2,7 +2,7 @@ module.exports = {
     meta: {
         type: "problem",
         docs: {
-            description: "Detecta y retorna query params no validados previamente.",
+            description: "Detects and reports query parameters that are used without prior validation, ensuring that all parameters are properly checked before use.",
             category: "Security",
             recommended: false
         },
