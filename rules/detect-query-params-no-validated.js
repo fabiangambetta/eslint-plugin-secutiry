@@ -51,7 +51,7 @@ module.exports = {
                     if (arg.type === 'Identifier' && queryParamNames.has(arg.name) && !validatedParams.has(arg.name)) {
                         context.report({
                             node: arg,
-                            message: `El query param '${arg.name}' se utiliza en el método '${node.callee.name || (node.callee.property && node.callee.property.name)}' sin haber sido validado con isValid`
+                            message: `El query param '${arg.name}' se utiliza en el método '${node.callee.name || (node.callee.property && node.callee.property.name)}' sin haber sido validado previamente`
                         });
                     }
                 });
